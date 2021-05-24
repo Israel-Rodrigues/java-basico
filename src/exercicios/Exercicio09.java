@@ -1,0 +1,31 @@
+package exercicios;
+
+import javax.swing.JOptionPane;
+
+/**
+ * Receber dois valores do usuário e exibir o resultado da soma
+ * 
+ * @author Israel Oliveira Rodrigues
+ * @since 05/02/2021
+ */
+public class Exercicio09 {
+
+	/*
+	 * Método principal para executar o programa
+	 */
+	public static void main(String[] args) {
+
+		// Declaração de variáveis
+		int valor1, valor2, resultado;
+
+		// Atribuindo valor ás variáveis com as informações imputadas pelo uauário
+		valor1 = Integer.parseInt(JOptionPane.showInputDialog("Informe o primeiro valor"));
+		valor2 = Integer.parseInt(JOptionPane.showInputDialog("Informe o segundo valor"));
+
+		// Executando a operação
+		resultado = valor1 + valor2;
+
+		// Exibindo resultado ao usuário
+		JOptionPane.showMessageDialog(null, "A soma dos valores informados é: " + resultado);
+	}
+}
